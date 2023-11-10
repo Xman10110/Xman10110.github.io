@@ -8,12 +8,41 @@
 </head>
 
 <body>
-    <label for="cipherInput">Enter Text to Decipher:</label>
-    <input type="text" id="cipherInput">
-    <button onclick="cipherText()">Decipher!</button>
-    <p id="cipherOutput"></p>
-
+    <label for="decipherInput">Enter Text to Decipher:</label>
+    <input type="text" id="decipherInput">
+    <button onclick="decipherText()">Decipher!</button>
+    <p></p>
     <script src="script.js"></script>
+</body>
+
+<body>
+    <label for="cipherInput">Enter Text to Cipher:</label>
+    <input type="text" id="cipherInput">
+    <select name="Degree" id="key">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <button onclick="cipherText()">Cipher!</button>
+    <p>
+        <hr>
+        --- Output ---
+        <button onclick="copyText()">Copy!</button>
+    </p>
+   
+    <div class="out"> <p id="output"></p> </div>
+    <style>
+        div {
+            width: device-width;
+            word-break: break-all;
+            white-space: normal;
+            }
+    </style>
 </body>
 
 </html>
