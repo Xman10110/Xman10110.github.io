@@ -126,7 +126,22 @@ function rand(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min); // floors a float number between min and max
 }
 
-function copyText(){
-    let text = document.getElementById("output").textContent
-    navigator.clipboard.writeText(text);
+function copyText() {
+    const copyButton = document.getElementById("copyButton");
+    let text = document.getElementById("output").textContent;
+
+    if (copyButton.innerText === "Copy!") {
+        copyButton.innerHTML = '<i class="fas fa-copy"></i>Copied!';
+        
+        navigator.clipboard.writeText(text)
+            .then(() => {
+            })
+            .catch((error) => {
+                console.error('Copy failed: ' + error);
+            });
+
+        setTimeout(() => {
+            copyButton.innerHTML = '<i class="fas fa-copy"></i>Copy!';
+        }, 2000);
+    }
 }

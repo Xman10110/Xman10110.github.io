@@ -4,45 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="icon.png" type="image/png">
+    <link rel="icon" href="icon.png" type="image/png">
     <title>J-Cipher Web</title>
 </head>
 
 <body>
-    <label for="decipherInput">Enter Text to Decipher:</label>
-    <input type="text" id="decipherInput">
-    <button onclick="decipherText()">Decipher!</button>
-    <p></p>
-    <script src="script.js"></script>
-</body>
+    <div class="container">
+        <!-- decipher -->
+        <label for="decipherInput">Enter Text to Decipher:</label>
+        <input type="text" id="decipherInput" class="text-input">
+        <button class="button" onclick="decipherText()">
+            <i class="fas fa-lock-open"></i>Decipher
+        </button>
+        <p></p>
+        <script src="script.js"></script>
 
-<body>
-    <label for="cipherInput">Enter Text to Cipher:</label>
-    <input type="text" id="cipherInput">
-    <select name="Degree" id="key">
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-    </select>
-    <button onclick="cipherText()">Cipher!</button>
-    <p>
-        <hr>
-        --- Output ---
-        <button onclick="copyText()">Copy!</button>
-    </p>
-   
-    <div class="out"> <p id="output"></p> </div>
-    <style>
-        div {
-            width: device-width;
-            word-break: break-all;
-            white-space: normal;
-            }
-    </style>
-</body>
+        <!-- cipher -->
+        <label for="cipherInput">Enter Text to Cipher:</label>
+        <input type="text" id="cipherInput" class="text-input">
+        <select name="Degree" id="key" class="custom-select">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
 
+        <button class="button" onclick="cipherText()">
+            <i class="fas fa-lock"></i>Cipher
+        </button>
+        <p>
+            <hr>
+           ------ Output ------
+        </p>
+        <div class="out">
+            <p id="output"></p>
+        </div>
+        <button class="button" id="copyButton" onclick="copyText()"><i class="fas fa-copy"></i>Copy!</button>
+    </div>
+    <div class="copyright">
+        J-Cipher Web | &copy; 2023
+    </div>
+</body>
 </html>
