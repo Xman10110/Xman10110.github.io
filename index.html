@@ -1,26 +1,169 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>
-Xman10110's Games!</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="A collection of my games that are uploaded onto this website so that they can be played on web devices.">
-<style>
-body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-h1{text-align:center;font-family:Verdana, sans-serif;color:#000000;background-color:#ffffff;}
-h2{text-align:center;font-family:Verdana, sans-serif;color:#000000;background-color:#ffffff;}
-p {text-align:center;font-family:Comfortaa, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
-a {text-align:center;font-family:Helvetica, serif;font-size:14px;font-style:normal;font-weight:normal;color:#FF6400;background-color:#ffffff;}
-</style>
-</head>
-<body>
-<h1>Xman10110's Things!</h1>
-<p>A collection of my things that are uploaded onto this website so that they can be used on web devices.</p>
-<p><a href="https://xman10110.github.io/games/concussion">Concussion</a></p>
-<p><a href="https://xman10110.github.io/games/omar">Omar (James' Game)</a></p>
-<p><a href="https://xman10110.github.io/games/tetris">Tetris</a></p>
-<h2>WIP Stuff</h1>
-<p><a href="https://xman10110.github.io/notgames/generation">Procedural Generation Test</a></p>
-<p><a href="https://xman10110.github.io/notgames/JSCipher">J-Cipher Web</a></p>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xander's Portfolio</title>
+        <link rel="stylesheet" href="indexPage/style.css">
+        <link rel="icon" type="image/x-icon" href="/indexPage/favicon.png">
+    </head>
+
+    <body>
+        <script src="indexPage/script.js"></script>
+
+        <div class="titlebar">Xander's Portfolio!</div>
+        <div class="titlebar-under"></div>
+
+        <div class="recent-project">
+            Newest Project
+        </div>
+
+        <div class="project-container">
+            <div class="project-text">
+                <span class="project-title">Tetris</span>
+                <hr class="project-title-underline">
+                <span class="project-description">
+                    The world-famous Tetris game recreated by me using the Godot Engine. It has all the features of modern Tetris, with a full UI, remappable controls, and more to come soon!
+                </span>
+                <hr class="project-description-underline">
+                <span class="project-features-used">
+                    Godot Engine • GDScript • JavaScript
+                </span>
+                <div class="project-buttons">
+                    <a href="/projects/tetris">
+                        <button class="indiv-project-button">Play Game</button>
+                    </a>
+                    
+                </div>
+            </div>
+            <img src="indexPage/assets/tetris-thumbnail.png" alt="Tetris" class="tetris-thumbnail">
+        </div>
+
+        <div class="all-projects-carousel">
+            <div class="recent-project">
+                Completed Projects
+            </div>
+
+            <div class="scrollbar-box">
+                <div class="vertical-scroll-box">
+                    <div class="project-container">
+                        <div class="project-text">
+                            <span class="project-title">Concussion</span>
+                            <hr class="project-title-underline">
+                            <span class="project-description">
+                                A simple two-player game where the goal is to jump on the other player's head. There's also tons of secrets to look out for, can you collect all the skins?
+                            </span>
+                            <hr class="project-description-underline">
+                            <span class="project-features-used">
+                                Unity Engine • C#
+                            </span>
+                            <div class="project-buttons">
+                                <a href="/projects/concussion">
+                                    <button class="indiv-project-button">Play Game</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <img src="indexPage/assets/concussion-thumbnail.png" alt="Concussion" class="tetris-thumbnail">
+                    </div>
+        
+                    <div class="project-container">
+                        <div class="project-text">
+                            <span class="project-title">JS-Cipher</span>
+                            <hr class="project-title-underline">
+                            <span class="project-description">
+                                A website that allows you to encrypt and decrypt text with the J-Cipher algorithm (invented by James). It's a human readable code, so see if you can crack it!
+                            </span>
+                            <hr class="project-description-underline">
+                            <span class="project-features-used">
+                                HTML • CSS&nbsp
+                                <a href="https://github.com/romkich09" class="credits-link">(by @romkich09)</a> 
+                                 &nbsp• JavaScript
+                            </span>
+                            <div class="project-buttons">
+                                <a href="/projects/jscipher">
+                                    <button class="indiv-project-button">Open Website</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <img src="indexPage/assets/jscipher-thumbnail.png" alt="JS-Cipher" class="tetris-thumbnail">
+                    </div>
+                    
+                    <div class="project-container">
+                        <div class="project-text">
+                            <span class="project-title">Omar</span>
+                            <hr class="project-title-underline">
+                            <span class="project-description">
+                                A small game made in collaboration with my friend James. You can run, walljump, and do almost anything except for leave the screenspace (which is small).
+                            </span>
+                            <hr class="project-description-underline">
+                            <span class="project-features-used">
+                                Godot Engine • GDScript
+                            </span>
+                            <div class="project-buttons">
+                                <a href="/projects/omar">
+                                    <button class="indiv-project-button">Play Game</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <img src="indexPage/assets/omar-thumbnail.png" alt="Omar" class="tetris-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-in-projects-carousel">
+            <div class="recent-project">
+                Work-In-Progress Projects
+            </div>
+
+            <div class="scrollbar-box">
+                <div class="vertical-scroll-box">
+                    <div class="project-container">
+                        <div class="project-text">
+                            <span class="project-title">Account Creator</span>
+                            <hr class="project-title-underline">
+                            <span class="project-description">
+                                A cool looking menu that lets you enter login details to be checked against different criteria. I plan to attach some server-side application to this one day with NodeJS.
+                            </span>
+                            <hr class="project-description-underline">
+                            <span class="project-features-used">
+                                HTML • CSS • JavaScript
+                            </span>
+                            <div class="project-buttons">
+                                <a href="/workinprogress/account-creator">
+                                    <button class="indiv-project-button">Open Website</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <img src="indexPage/assets/account-creator-thumbnail.png" alt="Account Creator" class="tetris-thumbnail">
+                    </div>
+        
+                    <div class="project-container">
+                        <div class="project-text">
+                            <span class="project-title">Generation Test</span>
+                            <hr class="project-title-underline">
+                            <span class="project-description">
+                                In this game, the terrain goes on infinitely using an algorithm I had made. I plan to incorporate this base into some infinite runner or sandbox game one day.
+                            </span>
+                            <hr class="project-description-underline">
+                            <span class="project-features-used">
+                                Godot Engine • GDScript
+                            </span>
+                            <div class="project-buttons">
+                                <a href="/workinprogress/generation-test">
+                                    <button class="indiv-project-button">Play Game</button>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <img src="indexPage/assets/generation-test-thumbnail.png" alt="Generation Test" class="tetris-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap'); /* this is the oxygen font! */
+
+* {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ffc8a3;
+    background-image: url('assets/background_texture.png')
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000000
+}
+
+.titlebar {
+    width: auto;
+    height: 15vmin;
+    background-color: rgb(255, 100, 0);
+    background-image: url('assets/titlebar_texture.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vmin;
+}
+.titlebar-under {
+    height: 2vmin;
+    background-color: orangered;
+    background-image: url('assets/titlebar_texture.png');
+    border-color: black;
+    border-bottom: 1vmin solid;
+}
+.recent-project {
+    padding-top: 3vmin;
+    text-align: center;
+    font-size: 5vmin;
+    text-decoration: underline;
+    padding-bottom: 3vmin;
+}
+.project-container {
+    padding: 2vmin;
+    margin: auto;
+    width: 80vmax;
+    height: auto;
+    border: solid 1vmin black;
+    border-radius: 5vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tetris-thumbnail {
+    display: flex;
+    width: 40%;
+    height: auto;
+    border-radius: 5vmin;
+    border: solid black;
+}
+
+@media screen and (max-aspect-ratio: 6/4) {
+    .project-container {
+        flex-direction: column;
+        width: 60vmin;
+    }
+    .tetris-thumbnail {
+        width: 50vmin;
+    }
+}
+
+
+.project-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+    width: 100%;
+}
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vmin;
+    text-align: center;
+    width: 100%;
+}
+.project-title-underline {
+    border: none;
+    height: 1vmin;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.project-description {
+    padding-top: 1vmin;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vmin;
+    display: flex;
+}
+.project-description-underline {
+    margin-left: auto;
+    margin-top: 1vmin;
+    border: none;
+    height: 0.5vmin;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.project-features-used {
+    padding-top: 1vmin;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    font-size: 2vmin;
+    display: flex;
+}
+.project-buttons {
+    margin-top: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: 2vmin;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 18vmin;
+}
+.project-buttons button {
+    border: 1vmin solid black;
+    width: 50vmin;
+    height: 8vmin;
+    font-size: 3.5vmin;
+    background-color: #ff6400;
+    transition: background-color 0.3s;
+    border-radius: 2vmin;
+}
+.indiv-project-button:hover {
+    background-color: rgb(100, 20, 0);
+    cursor: pointer;
+}
+.all-projects-carousel {
+    padding-bottom: 3vmin;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    border-top: solid 1vmin black;
+    border-bottom: solid 1vmin black;
+    background-color: #ff6400;
+    background-image: url('assets/carousel-texture.png');
+    height: auto;
+}
+.work-in-projects-carousel {
+    padding-bottom: 3vmin;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    border-top: solid 1vmin black;
+    border-bottom: solid 1vmin black;
+    background-color: #ff881f;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    height: auto;
+}
+.vertical-scroll-box {
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    display: inline-flex;
+    gap: 5vmin;
+    width: auto;
+    align-items: center;
+}  
+.scrollbar-box {
+    overflow-x: scroll;
+    padding-bottom: 3vh;
+}
+.scrollbar-box::-webkit-scrollbar {
+    width: 10px;
+}
+.scrollbar-box::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 100, 0);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.scrollbar-box::-webkit-scrollbar-track {
+    background: #00000064 
+}
+.scrollbar-box::-webkit-scrollbar-thumb:active {
+    background-color: orangered;
+}
+.credits-link {
+    color: rgb(20, 0, 100)
+}
+.credits-link:hover {
+    color: rgb(0, 0, 200)
+}
