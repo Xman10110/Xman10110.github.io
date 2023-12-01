@@ -10,7 +10,7 @@ body {
     background-color: #ffc8a3;
     background-image: url('assets/background_texture.png')
 }
-a {
+button {
     color: black;
 }
 ::-webkit-scrollbar {
