@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KerrWifi Password Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Kerr Password Tool</h1>
+        <input type="password" placeholder="Enter Secret Key" id="secretKeyBox"> <br>
+        <span class="smallText" id="secretKeyMessage">The app won't work without the secret key!</span> <br>
+        <button onclick="newPassword('rand')" id="button1">New Password</button>
+        <button onclick="newPassword('reset')" id="button2">Revert Password</button> <br>
+        <span class="smallText" id="buttonKeyMessage">Any updates about these buttons will go here!</span> <br>
+        <input type="time" id="timePicker">
+        <button id="resetButton" onclick="resetButton()">/</button> <br>
+        <span class="smallText">An action above can be delayed until this time!</span> <br>
+        <span class="smallText flipped" id="passwordDisplay">A new password has not been set yet!</span> <br>
+        <button id="copyButton" disabled onclick="copyButton()">Copy!</button>
+    </div>
+
+    <span class="copyright">Xander Kerr | &copy; 2023</span>
+    <script src="script.js"></script>
+  </body>
+</html>
