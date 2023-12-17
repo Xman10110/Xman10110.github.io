@@ -19,7 +19,7 @@ function newPassword(request) {
     statusElement.style.color = 'yellow'
     let delayString = calculateDelay() ? `&delay=${calculateDelay()}` : ''
     console.log(delayString)
-    fetch(`http://xman.ddns.us:3000?secret=${secretKey}&request=${request}${delayString}`).then(response => {
+    fetch(`http://xman.ddns.us:3000?secret=${secretKey}&request=${request}${delayString}/`).then(response => {
         switch(response.status) {
             case 403:
                 let element = document.getElementById('secretKeyMessage')
