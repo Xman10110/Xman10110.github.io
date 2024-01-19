@@ -1,0 +1,241 @@
+* {
+    font-family: 'Oxygen';
+    font-weight: 700;
+    font-size: 1vmax;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+}
+
+.groups {
+    overflow-y: auto;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    height: 95vh;
+    width: 16vw;
+}
+
+.editGroup {
+    overflow-y: auto;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    height: 5vh;
+    width: 16vw;
+}
+
+*::-webkit-scrollbar {
+    width: 0.5vmax;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(64,64,64);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: rgb(80,80,80);
+  }
+
+.groups h1 {
+    padding: 0.5vmax;
+    font-size: 2vmax;
+}
+
+.common_button {
+    border: none;
+    border-radius: 5vmax;
+    background-color: rgb(64, 64, 64);
+    font-size: 1.5vmax;
+    width: 3vmax;
+    height: 3vmax;
+    margin-bottom: 1vmax;
+}
+
+.common_button:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+.common_button:active{
+    background-color: rgb(96, 96, 96);
+}
+
+.a-group {
+    border: none;
+    overflow: hidden;
+    padding: 0.25vmax;
+    padding-left: 0.5vmax;
+    padding-right: 0.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1vmax;
+    border-radius: 10px;
+    transform: translate(16%);
+    background-color: rgb(64, 64, 64);
+    width: 75%;
+    height: 10%;
+}
+
+.a-group:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.a-group:active {
+    background-color: rgb(96, 96, 96);
+}
+
+.a-grouphighlight {
+    background-color: rgb(32, 128, 128);
+}
+
+.a-grouphighlight:hover {
+    background-color: rgb(40, 160, 160);
+}
+
+.a-grouphighlight:active {
+    background-color: rgb(48, 192, 192);
+}
+
+.names {
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    height: 70vh;
+    width: 16vw;
+    overflow-y: auto;
+}
+
+.names h1 {
+    padding: 0.5vmax;
+    font-size: 2vmax;
+}
+
+.nameInput {
+    background-color: rgb(64, 64, 64);
+    border: none;
+    text-align: center;
+    width: 75%;
+    height: 2vmax;
+    border-radius: 0.5vmax;
+}
+
+.linebreak {
+    margin-top: 1vmax;
+    margin-bottom: 1vmax;
+    transform: translate(50%);
+    border-radius: 1vmax;
+    width: 50%;
+    height: 0.2vmax;;
+    background-color: rgb(32,32,32);
+}
+.nameObject {
+    margin-right: 0.5vmax;
+    height: 3vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nameObject button {
+    margin-left: 0.5vmax;
+    border: none;
+    border-radius: 5vmax;
+    background-color: rgb(64, 64, 64);
+    font-size: 0.8vmax;
+    width: 2vmax;
+    height: 2vmax;
+    margin-bottom: 1vmax;
+}
+.nameObject input {
+    margin-left: 1vmax;
+    border: none;
+    border-radius: 5vmax;
+    background-color: rgb(64, 64, 64);
+    font-size: 0.8vmax;
+    width: 2vmax;
+    height: 2vmax;
+    margin-bottom: 1vmax;
+}
+.nameObject h2 {
+    transform: translate(0, -0.5vmax);
+    width: 60%;
+    overflow-wrap: break-word;
+}
+
+.nameObject button:hover {
+    background-color: rgb(80, 80, 80);
+}
+
+.nameObject button:active {
+    background-color: rgb(96, 96, 96);
+}
+
+.hidden {
+    display: none;
+}
+.namesBelow {
+    border-top: 0.5vh solid rgb(32,32,32);
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgb(48, 48, 48);
+    height: 29.5vh;
+    width: 16vw;
+    overflow-y: auto;
+}
+.button-wide {
+    width: 80%;
+    height: 3vmax;
+    font-size: 1vmax;
+}
+.centerStage {
+    position: relative;
+    width: 68vw;
+    overflow: hidden;
+}
+.stick {
+    overflow: hidden;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vmax;
+    border-radius: 10vmax;
+    position: absolute;
+    width: 60vmax;
+    height: 3vmax;
+    background-image: url('black-orchid.png');
+    transition: 1s ease-out;
+    opacity: 0;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+.checkEnabled {
+    background-color: rgb(32, 255, 32) !important;
+    color: black;
+}
+.checkEnabled:hover {
+    background-color: rgb(64, 255, 64) !important;
+}
+.checkEnabled:active {
+    background-color: rgb(96, 255, 96) !important;
+}
+.checkDisabled {
+    background-color: rgb(255, 32, 32) !important;
+    color: black;
+}
+.checkDisabled:hover {
+    background-color: rgb(255, 64, 64) !important;
+}
+.checkDisabled:active {
+    background-color: rgb(255, 96, 96) !important;
+}

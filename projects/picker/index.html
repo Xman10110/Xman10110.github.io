@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Picker Wheel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	<script src="script.js"></script>
+
+    <div>
+      <div class="groups" id="groupPicker">
+        <h1>Groups</h1>
+        <button id="addGroup" class="common_button" onclick="newGroup()">+</button>
+    </div>
+    <div class="editGroup">
+      <input type="text" placeholder="Edit group name..." class="nameInput hidden" id="groupNameChangeInput" spellcheck="false" onkeydown="changeGroupName(event)">
+    </div>
+    </div>
+    
+    <div class="centerStage" id="centerStage">
+    </div>
+
+    <div id="rightNamePanel" class="hidden">
+      <div class="names">
+        <h1>Names</h1>
+        <input placeholder="Add a name..." type="text" class="nameInput" spellcheck="false" id="nameInput" onkeydown="newName(event)">
+        <div class="linebreak" id="afterNameField"></div>
+        <div id="nameList"></div>
+      </div>
+      <div class="namesBelow">
+        <button class="common_button button-wide" onclick="stickEvent()">Choose Random Name</button>
+      </div>
+    </div>
+  </body>
+</html>
