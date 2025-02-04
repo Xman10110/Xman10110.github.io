@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KHInsider Web Client</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.png">
+    </head>
+
+    <body>
+
+        <h1>KHInsider Web Client</h1> <hr>
+
+        <img id="albumArt" style="display: none;">
+        <div class="fileInputContainer">
+            <input type="file" accept=".html" id="htmlFilePicker" hidden>
+            <br> <h2 id="buttonHeader">Click the button to import a KHInsider Soundtrack HTML file!</h2>
+            
+            <audio controls="true" autoplay="true" style="display: none" id="audioPlayer"> I love this song!</audio>
+            <button type="button" id="htmlFilePickerButton">Import!</button>
+        </div>
+
+        
+        <table id="songTable" style="display: none;">
+            <tr>
+                <th>CD</th>
+                <th>#</th>
+                <th>Name</th>
+                <th>Duration</th>
+            </tr>
+        </table>
+
+        <div class="songContainer" id="songContainer">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Oxygen:wght@300;400;700&display=swap');
+
+*
+{
+    font-family: "Oxygen";
+    font-weight: 400;
+}
+
+h1
+{
+    text-align: center;
+    margin: auto;
+    font-size: 5vw;
+    width: auto;
+    color: white;
+    font-weight: 700;
+}
+
+h2
+{
+    text-align: center;
+    margin: auto;
+    font-size: 1.5vw;
+    width: auto;
+    color: white;
+    
+}
+
+.songButton
+{
+    text-align: left;
+    margin:auto;
+    font-size: 1vw;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    transition: 0.1s;
+}
+
+.songButton:hover
+{
+    color: rgb(255, 80, 80);
+}
+
+hr
+{
+    border: none;
+    height: 0.5vw;
+    background-color: white;
+    width: 85%;
+}
+
+body
+{
+    display: grid;
+    background-color: #1a0004;
+    background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+    text-align: center;
+}
+
+#htmlFilePickerButton
+{
+    margin-top: 3vh;
+    padding: 1vw 8vw;
+    background: #ff5a5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1vw;
+    transition-duration: 0.3s;
+}
+
+#htmlFilePickerButton:hover
+{
+    background: #852c2c;
+}
+
+.songContainer
+{
+    width: 40%;
+    margin: auto; 
+}
+
+#audioPlayer::-webkit-media-controls-panel
+{
+    background-color: #ff5a5a;
+}
+
+#audioPlayer::-webkit-media-controls-time-remaining-display, ::-webkit-media-controls-current-time-display, ::-webkit-media-controls-mute-button, ::-webkit-media-controls-play-button
+{
+    color: white;
+    border: none;
+    text-shadow: none;
+    font-family: 'Oxygen';
+    font-weight: 700;
+}
+
+#audioPlayer::-webkit-media-controls-play-button
+{
+    color: red;
+    border-radius: 1vw;
+}
+
+#audioPlayer
+{
+    margin: 1vw;
+    width: 50vw;
+}
+
+table
+{
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+    color: white;
+    font-size: 1vw;
+    width: 60vw;
+}
+
+td,th
+{
+    border-collapse: collapse;
+    border: 0.4vh solid white;
+    border-radius: 100%;
+    padding: 0.5vw;
+}
+
+th
+{
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+.playingSong
+{
+    color: rgb(255, 79, 79);
+    font-weight:700;
+    font-size: 1.5vw;
+}
+
+img
+{
+    width: 60vmin;
+    border-radius: 4vmin;
+    margin: auto;
+    margin-top: 1vmin;
+    border: 0.5vmin solid black;
+}
